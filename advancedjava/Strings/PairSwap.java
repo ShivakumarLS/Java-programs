@@ -1,4 +1,4 @@
-
+package Strings;
 public class PairSwap {
     public static ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) return head;

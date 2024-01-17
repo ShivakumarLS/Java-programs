@@ -1,4 +1,3 @@
-package JavaPrograms.arrays;
 
 
 public class MinOPerations {

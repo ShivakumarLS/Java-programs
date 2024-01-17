@@ -1,4 +1,3 @@
-package JavaPrograms.arrays;
 
 import java.util.Collection;
 import java.util.HashMap;

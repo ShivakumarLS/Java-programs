@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -11,14 +12,14 @@ public class ThirdLowest {
            if(!alist.contains(arr[i]))
                 alist.add(arr[i]);
         
-        return alist;
+        return alist.get(2);
     }
 
     public static void main(String[] args) 
     {
         int[] arr = { 1, 3,4,4,6,7,8,8, 3, 8, 5,  9, 10, 11, 12,  4 };
-        ArrayList<Integer> alist = remdup(arr);
-        System.out.println(alist.get(2) + " is the 3rd lowest integer");
+        int three = remdup(arr);
+        System.out.println(three + " is the 3rd lowest integer");
 
     }
 
