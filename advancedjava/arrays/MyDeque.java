@@ -1,4 +1,6 @@
-
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
 
 public class MyDeque {
 
@@ -99,7 +101,14 @@ public class MyDeque {
         dq.addFirst(34);
         
         dq.display();
-       
-       
+       Deque<Integer>  dQ = new ArrayDeque<>();
+       dQ.addLast(1);
+       dQ.addLast(2);
+       dQ.addFirst(32);
+       dQ.addFirst(89);
+    //    for (Integer integer : dQ) {
+    //     System.out.println(integer);
+    //    }
+       System.out.println(Arrays.toString(dQ.toArray()));
     }
 }
