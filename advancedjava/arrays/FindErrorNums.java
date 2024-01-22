@@ -14,7 +14,26 @@ public class FindErrorNums {
         return new int[] { repeating, naturalSum - actualSum };
     }
 
-    public static void main(String[] args) {
+    static public int[] findErrorNumsTwo(int[] nums) {
+        int repeating = 0,missing = 0;
+        int []  perfectArray  = new int [nums.length+1];
 
+        for(int i : nums)
+            perfectArray[i]++;
+
+        for (int i = 0; i <perfectArray.length; i++) {
+            if(perfectArray[i]==2)
+                repeating = i;
+            if(perfectArray[i]==0)
+                missing=i;
+            
+        }
+        
+        return new int[] { repeating,missing };
+    }
+
+    public static void main(String[] args) {
+        int [] nums = {1,2,3,4,5,7,7};
+    System.out.printf("[%d,%d]",findErrorNumsTwo((nums))[0],findErrorNumsTwo(nums)[1]);
     }
 }

@@ -7,6 +7,7 @@ def corpFlightBookings(bookings,n):
         result[start-1]+=seats
         if end<n :
             result[end]-=seats
+        print(result)
     for i in range(1,len(result)):
         result[i]+=result[i-1]
     return result

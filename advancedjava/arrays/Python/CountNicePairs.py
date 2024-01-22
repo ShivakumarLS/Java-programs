@@ -15,9 +15,10 @@ def countNicePairs(nums) :
             hm[val]=1
         else:
             hm[val]+=1
-    mod = 100000007
+   
     for i in hm.values():
-        result = ((result%mod)+i*(i-1)//2)%mod 
+        result = ((result)+i*(i-1)//2)
     return result
+
 nums = [13, 10, 35, 24, 76 ]
 print(countNicePairs(nums))

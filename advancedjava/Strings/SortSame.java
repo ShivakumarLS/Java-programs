@@ -17,7 +17,7 @@ public class SortSame {
         List<String> result = new ArrayList<>();
         for (List<String> i : map.values())
             result.addAll(i);
-        System.out.println(map);
+        // System.out.println(map);
         return result;
     }
 
