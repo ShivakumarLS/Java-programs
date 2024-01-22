@@ -1,6 +1,17 @@
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Deque;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Stream;
+
+import JDBC.myApp;
 
 public class MyDeque {
 
@@ -89,6 +100,9 @@ public class MyDeque {
         return currentSize == 0;
     }
     
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         MyDeque dq = new MyDeque(10);
         dq.addLast(1);
@@ -110,5 +124,15 @@ public class MyDeque {
     //     System.out.println(integer);
     //    }
        System.out.println(dQ.toArray());
+
+    //    List<Integer> temp = new ArrayList<>(Arrays.asList(1,2,3));
+        Map<Integer,Integer> map = new HashMap<>();
+      Set<List<Integer>> set = new HashSet<>();
+//       set.add(temp);
+        List<Integer> temp = Arrays.asList(123,456,2,3,4),temp2 = new ArrayList<>();
+        //sort using comparator
+
+        System.out.println(temp);
     }
 }
+
