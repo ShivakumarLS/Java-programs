@@ -109,6 +109,6 @@ public class MyDeque {
     //    for (Integer integer : dQ) {
     //     System.out.println(integer);
     //    }
-       System.out.println(dQ.toArray());
+       System.out.println(Arrays.toString(dQ.toArray()));
     }
 }
