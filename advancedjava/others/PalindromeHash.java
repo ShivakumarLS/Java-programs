@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class PalindromeHash {
 
     public static void main(String[] args) {
@@ -8,12 +7,12 @@ public class PalindromeHash {
         for (int i = 0, j = str.length() - 1; i < str.length() && j > -1; i++, j--)
             hm.put(str.charAt(i), str.charAt(j));
         boolean flag = true;
-        for (Map.Entry<Character, Character> entry : hm.entrySet()) {
+        for (Map.Entry<Character, Character> entry : hm.entrySet()) 
             if (entry.getKey() != entry.getValue()) {
                 flag = false;
                 break;
             }
-        }
+            
         System.out.println(flag);
     }
 }

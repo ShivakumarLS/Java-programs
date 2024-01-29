@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -30,16 +31,8 @@ public class UnionIntersection {
 
     public static void main(String[] args) {
         int[] a = { 1, 2, 3, 4, 5 }, b = { 4, 5, 6 };
+        System.out.println("union :\n" + union(a, b));        
+        System.out.println("intersection :\n"+intersection(a, b));
 
-        System.out.println("union");
-        System.out.print("{");
-        for (int i : union(a, b))
-            System.out.print(i + " ");
-        System.out.println("}");
-        System.out.println("intersection");
-        System.out.print("{");
-        for (int i : intersection(a, b))
-            System.out.print(i + " ");
-        System.out.print("}");
     }
 }

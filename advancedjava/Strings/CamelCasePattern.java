@@ -47,7 +47,6 @@ public class CamelCasePattern {
         for(int i =1;i<pattern.length();i++)
             {
                 if(isUpper(pattern.charAt(i))){
-                    
                     patterns.add(pattern.substring(start, i));
                     start = i;
             }
